@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <div class="title-section">
+        <h1 class="title">Shopping List</h1>
+      </div>
+      <div class="list-section">
+        <ul id="list" class="list">
+          
+        </ul>
+      </div>
+      <div class="add-section">
+        <div class="add">
+          <input type="text" onkeydown="enterPress(event)" id="input" placeholder="Add an item...">
+          <span onclick="addItem()" id="itembutton" class="add-item">+</span>
+          <img src="img/eraser.png" alt="Clear All" onclick="clearList()">
+          <img src="img/eraserstrike.png" alt="Clear Checked" onclick="clearCrossed()">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
