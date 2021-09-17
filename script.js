@@ -34,7 +34,6 @@ list.addEventListener('click', function(ev) {
 
 // Double click to remove an item
 
-var list = document.getElementById("list");
 list.addEventListener('dblclick', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.remove();
@@ -53,7 +52,6 @@ function enterPress(event) {
 // Clears the list
 
 function clearList() {
-  var list = document.getElementById("list");
   while (list.hasChildNodes()) {
     list.removeChild(list.firstChild);
   }
